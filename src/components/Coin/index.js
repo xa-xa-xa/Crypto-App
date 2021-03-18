@@ -1,17 +1,24 @@
 import styles from "./Coin.module.scss";
+import Link from "next/link";
 
-function Coin(props) {
-  const {
-    id,
-    image,
-    marketCap,
-    name,
-    price,
-    priceChange24,
-    symbol,
-    volume
-  } = props;
-  return (
+const Coin = ({
+  id,
+  image,
+  marketCap,
+  name,
+  price,
+  priceChange24,
+  symbol,
+  volume
+}) => (
+  <Link
+   
+   
+   
+   
+    href={`/coin/${id}`}
+    // as={`/coin/${id}`}
+  >
     <div className={styles.coin_container}>
       <section className={styles.image}>
         <img src={image} alt={name} />
@@ -28,10 +35,7 @@ function Coin(props) {
         })}
       </section>
       <section
-        className={
-          (priceChange24 > 0 ? styles.price_up : styles.price_down,
-          styles.price_change)
-        }
+        className={priceChange24 > 0 ? styles.price_up : styles.price_down}
       >
         {priceChange24 < 0
           ? priceChange24.toFixed(2)
@@ -55,7 +59,7 @@ function Coin(props) {
           .slice(0, -3)}
       </section>
     </div>
-  );
-}
+  </Link>
+);
 
 export default Coin;
