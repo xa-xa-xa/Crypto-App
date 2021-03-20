@@ -17,18 +17,18 @@
   justify-content: center;
   .input {
     height: 100%;
-    width: 1em;
+    width: 10em;
     background-color: $base-color_light;
     color: $base-color_dark;
     padding: 0.5em;
     padding-left: 1.7em;
-    border-radius: 2em;
+    border-radius: 0.5em;
     border-color: none;
     outline: none;
     transition: 400ms;
     margin-left: 0.5em;
     font-size: 1.25em;
-    text-indent: 0.5em;
+    text-indent: 0.25em;
     &:focus {
       width: 24em;
       outline: none;
