@@ -1,0 +1,46 @@
+@import "../../../styles/Home.module.scss";
+.header_container {
+  display: flex;
+  width: 100%;
+  height: 3em;
+  margin-bottom: -0.8em;
+  transition: 250ms;
+  align-items: center;
+  text-align: right;
+  color: $base-color_dark;
+  font-weight: 700;
+  justify-content: space-between;
+  padding: 0 3em;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid rgb(117, 116, 148);
+  }
+
+  section {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0.5em;
+  }
+}
+
+// columns widths
+.image {
+  width: 2em;
+}
+.name {
+  justify-self: left;
+  text-align: left;
+  width: 16em;
+}
+.price {
+  width: 6em;
+}
+.price_change {
+  width: 4em;
+}
+.m_capital {
+  width: 10em;
+}
+.m_volume {
+  width: 10em;
+}
