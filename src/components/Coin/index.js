@@ -11,14 +11,7 @@ const Coin = ({
   symbol,
   volume
 }) => (
-  <Link
-   
-   
-   
-   
-    href={`/coin/${id}`}
-    // as={`/coin/${id}`}
-  >
+  <Link href={`/coinPage/${id}`} as={`/coinPage/${id}`}>
     <div className={styles.coin_container}>
       <section className={styles.image}>
         <img src={image} alt={name} />
