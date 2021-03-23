@@ -11,15 +11,25 @@ const Layout = ({ children, title = "Crypto App" }) => (
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <header>
+    <header className={layoutStyles.header}>
       <Link href="/" passHref>
-        <a className="flex flex-center_h">
+        <a className={layoutStyles.home_link}>
           <Icon width="4em" icon={piggyBankCoin} />
           <h1 style={{ marginLeft: "0.5em" }}>{title}</h1>
         </a>
       </Link>
     </header>
     <main>{children}</main>
+    <footer className={layoutStyles.footer}>
+      Made with love by{" "}
+      <a
+        href="http://www.askrasn.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        AsKrasn
+      </a>
+    </footer>
   </div>
 );
 

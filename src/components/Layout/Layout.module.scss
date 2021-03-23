@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  height: calc(100vh - 32px);
+  flex-direction: column;
+  align-items: center;
+}
+
+.home_link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 1em;
+}

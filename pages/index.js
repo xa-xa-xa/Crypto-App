@@ -18,15 +18,6 @@ const Home = ({ fetchedData }) => {
     <Layout className={styles.main_container}>
       <SearchBar onChange={handleChange} placeholder={"enter coin name"} />
       <CoinsList data={filteredCoins} />
-      <footer className="flex flex-center_h">
-        <a
-          href="http://www.askrasn.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by AsKrasn
-        </a>
-      </footer>
     </Layout>
   );
 };
