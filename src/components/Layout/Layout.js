@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
+import layoutStyles from "./Layout.module.scss";
 
 import { Icon, InlineIcon } from "@iconify/react";
 import piggyBankCoin from "@iconify/icons-vaadin/piggy-bank-coin";
 
 const Layout = ({ children, title = "Crypto App" }) => (
-  <div className="layout">
+  <div className={layoutStyles.container}>
     <Head>
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />

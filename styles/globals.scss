@@ -10,6 +10,12 @@ body {
     margin: 1em 2em;
     color: $base-color_dark;
 }
+body {
+  background: $background-color-light;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 a {
   text-decoration: none;
