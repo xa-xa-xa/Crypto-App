@@ -1,0 +1,22 @@
+@import "../../styles/Home.module.scss";
+.container {
+    border: 1px solid gainsboro;
+    background-color: darken($background-color-light, 3%);
+    padding: 1em 2em;
+    border-radius: 5px;
+    img {
+        display: inline;
+        width: 100px;
+    }
+    h2 {
+        display: inline;
+        margin-right: 1em;
+    }
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;  /* Number of lines displayed before it truncate */
+     overflow: hidden;
+}

@@ -3,10 +3,10 @@ import styles from "./CoinList.module.scss";
 import CoinListHeader from "./CoinList_header";
 
 const CoinsList = ({ data }) => (
-  <>
+  <div>
     <CoinListHeader />
     <div className={styles.fade_up}></div>
-    <div className={styles.coin_list_container}>
+    <section className={styles.coin_list_container}>
       {data.map((coin) => (
         <Coin
           key={coin.id}
@@ -20,8 +20,8 @@ const CoinsList = ({ data }) => (
           priceChange24={coin.price_change_percentage_24h}
         />
       ))}
-    </div>
+    </section>
     <div className={styles.fade_down}></div>
-  </>
+  </div>
 );
 export default CoinsList;
