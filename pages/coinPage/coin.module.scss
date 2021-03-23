@@ -1,22 +1,62 @@
 @import "../../styles/Home.module.scss";
 .container {
-    border: 1px solid gainsboro;
-    background-color: darken($background-color-light, 3%);
-    padding: 1em 2em;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 84px);
+
+}
+
+.card {
+  border: 1px solid gainsboro;
+  background-color: darken($background-color-light, 3%);
+  padding: 2em 3em;
+  border-radius: 5px;
+  max-height: 80%;
+  max-width: 80%;
+
+  img {
+    width: 4em;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
     img {
-        display: inline;
-        width: 100px;
+      margin-left: 1em;
     }
-    h2 {
-        display: inline;
-        margin-right: 1em;
+  }
+  h2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    & span {
+      span {
+        color: $color_green;
+        &.red {
+          color: $color_red;
+        }
+      }
     }
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .details span {
+    font-weight: 600;
+  }
+  li {
+    margin-bottom: 0.25em;
+  }
 }
 
 .description {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;  /* Number of lines displayed before it truncate */
-     overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines displayed before it truncate */
+  overflow: hidden;
+  margin-bottom: 1em;
 }
