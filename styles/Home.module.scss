@@ -1,7 +1,12 @@
 $background-color-light: rgb(255, 255, 255);
 $background-color-dark: rgb(27, 27, 29);
 $base-color_dark: rgba(16, 19, 16, 0.8);
-$base-color-light: lighten($background-color-dark, 95%);
-$text-color_dark: darken($base-color-light, 95%);
+$base-color-light: lighten($background-color-dark, 90%);
+$text-color_dark: darken($base-color-light, 90%);
+$border-color-light: lighten($background-color-dark, 80%);
+$border-color_dark: darken($base-color-light, 80%);
 $color_red: rgb(236, 46, 46);
 $color_green: rgb(9, 180, 9);
+$shadow_sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow_lg: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$hover_transition: all 0.3s cubic-bezier(.25,.8,.25,1);
