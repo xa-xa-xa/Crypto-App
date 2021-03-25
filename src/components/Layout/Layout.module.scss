@@ -1,18 +1,48 @@
 .container {
+  transition: 200ms;
   display: flex;
-  height: calc(100vh - 32px);
+  max-height: calc(100vh - 32px);
   flex-direction: column;
   align-items: center;
+  z-index: 2;
+
 }
 
-.home_link {
-  position: relative;
+
+.navbar {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
   align-items: center;
-  &:hover {
-    border-bottom: 2px solid transparent;
+  width: calc(100% + 48px);
+  height: 4em;
+  top: -12px;
+  padding: 1em;
+
+  .home_link {
+    display: flex;
+    align-items: center;
+    width: 14em;
+    &:hover {
+      border-bottom: 2px solid transparent;
+    }
   }
+
+  .wallet {
+    margin-left: auto;
+    width: 4em;
+    padding: .5em;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 200ms;
+    &:hover {
+      background-color: lightgray;
+      color: rgb(65, 65, 65);
+    }
+  }
+
 }
 
 .footer {
