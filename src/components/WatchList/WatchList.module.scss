@@ -1,0 +1,29 @@
+@import "../../../styles/Home.module.scss";
+.container {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    right: 2%;
+    min-width: auto;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-x: auto;
+    background-color: lighten($color_green, 70%);
+    padding: 1em;
+    box-shadow: $shadow_lg;
+    border-radius: 5px;
+    h1 {
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1em;
+        justify-content: space-evenly;
+        li {
+            margin-bottom: 1em;
+        }
+    }
+}
