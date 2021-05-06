@@ -1,4 +1,4 @@
-# Crypto App - React/Next.js
+# Crypto App - React/Next.js (WIP)
 
 
 
